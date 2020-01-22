@@ -15,8 +15,8 @@ source_x86_64=("http://desktop-production.freelancer.com/latest/installers/${pkg
 md5sums_x86_64=('27c0223052e39385119c8b5b0a593590')
 package() {
 	# Extract zipped tar files from Ubuntu deb package
-	tar -xzf control.tar.gz
-	tar -xzf data.tar.gz
+       tar -xpJf control.tar.xz
+       tar -xpJf data.tar.xz
 
 	# Prepare the opt directory
 	install -dm755 "$pkgdir/"{opt,usr/bin}
