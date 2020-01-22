@@ -10,9 +10,9 @@ license=('custom:freelancer' 'custom:oracle')
 install="$pkgname.install"
 changelog=CHANGELOG.md
 source_i686=("http://desktop-production.freelancer.com/latest/installers/${pkgname}_ubuntu-i386.deb")
-md5sums_i686=('3b2638d7efb06c77857d727e88abc1be')
+md5sums_i686=('454084c47a4119be46c7fbbeb565d781')
 source_x86_64=("http://desktop-production.freelancer.com/latest/installers/${pkgname}_ubuntu-amd64.deb")
-md5sums_x86_64=('3f8fa90168e8b1e379358b77cf87a0d5')
+md5sums_x86_64=('27c0223052e39385119c8b5b0a593590')
 package() {
 	# Extract zipped tar files from Ubuntu deb package
 	tar -xzf control.tar.gz
